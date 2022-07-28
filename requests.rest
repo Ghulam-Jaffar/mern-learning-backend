@@ -16,3 +16,28 @@ DELETE http://localhost:5000/api/todo/delete/62e01723d8562f47e79b722e
 ###
 
 PUT http://localhost:5000/api//todo/toggleStatus/62e018a8f812af9f3d867e04
+
+###
+
+GET http://localhost:5000/user/getUser
+
+###
+
+POST http://localhost:5000/user/register
+Content-Type: application/json
+
+{
+    "name":"ham",
+    "email":"ham@gmail.com",
+    "password":"ham12"
+}
+
+###
+
+POST http://localhost:5000/user/login
+Content-Type: application/json
+
+{
+    "email":"jaf@gmail.com",
+    "password":"jaf12"
+} 
