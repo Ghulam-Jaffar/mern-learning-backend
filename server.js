@@ -12,7 +12,7 @@ connectDB()
 
 const port = process.env.PORT || 5000
 
-app.use("/", (req, res) => {res.send('Welcome to Todo App')})
+app.use("/home", (req, res) => {res.send('Welcome to Todo App')})
 app.use("/api", todoRoute)
 
 app.listen(port, () => { console.log(`Server is running on port ${port}`) })
